@@ -166,8 +166,8 @@ section {
 }
 .scroll-down {
     position: absolute;
-    bottom: 25%;
-    right: 25%;
+    bottom: 20%;
+    right: 20%;
 }
 .scroll-down a {
     text-decoration: none;
