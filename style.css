@@ -18,7 +18,8 @@ body {
 }
 .contenedor {
     margin: 0 auto;
-    max-width: 120rem;
+    max-width: 70vw;
+    max-height: 70vh;
 }
 
 .header {
@@ -28,7 +29,7 @@ body {
     align-items: center;
 }
 .logo {
-    font-size: 2rem;
+    font-size: 3rem;
     background-color: var(--negro);
     border-radius: 0.5rem;
     margin: 1rem 0 1rem 2rem;
@@ -37,7 +38,7 @@ body {
     color: var(--blanco);
 }
 .logo span {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
 }
 
@@ -70,7 +71,7 @@ body {
     list-style: none;
 }
 .nav-pri a {
-    font-size: 2rem;
+    font-size: 3rem;
     text-decoration: none;
     color:var(--blanco);
     margin: 1rem;
@@ -87,7 +88,7 @@ section {
 }
 
 .hero {
-    height: 60rem;
+    height: 80vh;
     background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
     position: relative;
     display: grid;
@@ -165,8 +166,8 @@ section {
 }
 .scroll-down {
     position: absolute;
-    bottom: 10%;
-    right: 20%;
+    bottom: 25%;
+    right: 25%;
 }
 .scroll-down a {
     text-decoration: none;
