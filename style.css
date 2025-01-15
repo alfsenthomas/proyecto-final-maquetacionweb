@@ -9,13 +9,14 @@ html {
     font-size:62.5%;
     box-sizing: border-box;
     margin: 0;
-}
+    }
 
 body {
     font-size: 16px;
     font-family: "Roboto", serif;
     background-color: var(--gris-claro);
 }
+
 .contenedor {
     margin: 0 auto;
     max-width: 70vw;
@@ -27,6 +28,7 @@ body {
     justify-content: space-between;
     color: var(--blanco);
     align-items: center;
+    padding: 2rem 0;
 }
 .logo {
     font-size: 3rem;
@@ -88,7 +90,7 @@ section {
 }
 
 .hero {
-    height: 80vh;
+    height: 70vh;
     background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
     position: relative;
     display: grid;
@@ -166,7 +168,7 @@ section {
 }
 .scroll-down {
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
     right: 20%;
 }
 .scroll-down a {
@@ -185,27 +187,75 @@ section {
     transform: translateY(1rem);
 }
 
+/* @media (max-width: 1900px) {
+    .logo {
+        font-size: 2rem;
+    }
+    .logo span {
+        font-size: 3rem;
+    }
+    .scroll-down {
+        position: absolute;
+        bottom: 10%;
+        right: 20%;
+    }
+} */
+
 @media (max-width: 768px) {
+    .contenedor {
+        max-height: 100%;
+    }
+    .header {
+        flex-direction: column;
+    }
+
     .nav-pri {
         flex-direction: column;
     }
 
+    .nav-pri a {
+        display: inline-block;
+        margin-bottom: 2rem 0;
+    }
     section {
-        padding: 3rem;    
+            
+    }
+    .hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: auto;
+        gap: 1rem;
+    }
+    .hero-img {
+        grid-row: 1 / 2;
+                
+    }
+    .hero-img img {
+        width: 50%;
+        top: 10%;
+        left: 22%;       
+    }
+    .hero-img img:hover {
+        width: 60%;
+    }
+    .hero-text {
+        grid-row: 2 / 3;
+        padding: 2rem;
     }
     .scroll-down {
-        bottom: 30%;
-        right: 15%;
+        display: none;
     }
     .icons {
-        top: 35vh;
-        padding: 0 5%;  
+        top: 90vh;
+        padding: 0 15%;  
     }
     .enlaces a {
         padding: 1rem;
     }
 
+
 }
+
 @media (max-width: 450px) {
     .logo {
         margin: 1rem 1rem 2rem 1rem ;
